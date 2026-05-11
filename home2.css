@@ -28,7 +28,6 @@ body{
     z-index: 1000;
 }
 
-
 .logo img{
     width: 150px;
 }
@@ -58,7 +57,6 @@ body{
 .nav-links li a:hover{
     color: #d6a676;
 }
-
 
 .dropdown-menu{
     position: absolute;
@@ -137,6 +135,12 @@ body{
 .login-btn{
     background: #d6a676;
     color: white;
+}
+.craft-footer{
+    width: 100%;
+    background: #3d2b1f;
+    color: #fff;
+    padding-top: 70px;
 }
 
 .footer-container{

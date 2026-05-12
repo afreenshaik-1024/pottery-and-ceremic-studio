@@ -1,0 +1,543 @@
+
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Wine Bar & Tasting Room</title>
+ 
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;500;600;700&family=Poppins:wght@300;400;500;600&display=swap%22 rel="stylesheet">
+ 
+<style>
+ 
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+ 
+body{
+    font-family:'Poppins',sans-serif;
+    background:#111;
+    color:#fff;
+    overflow-x:hidden;
+}
+ 
+/* NAVBAR */
+ 
+header{
+    width:100%;
+    padding:20px 8%;
+    position:fixed;
+    top:0;
+    left:0;
+    z-index:1000;
+    background:rgba(0,0,0,0.6);
+    backdrop-filter:blur(10px);
+}
+ 
+.navbar{
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+}
+ 
+.logo{
+    font-size:32px;
+    color:#d4a762;
+    font-family:'Cormorant Garamond',serif;
+    font-weight:700;
+}
+ 
+.nav-links{
+    display:flex;
+    gap:30px;
+}
+ 
+.nav-links a{
+    text-decoration:none;
+    color:#fff;
+    font-size:15px;
+    transition:0.3s;
+}
+ 
+.nav-links a:hover{
+    color:#d4a762;
+}
+ 
+/* HERO SECTION */
+ 
+.hero{
+    height:100vh;
+    background:url('https://images.unsplash.com/photo-1516594915697-87eb3b1c14ea?q=80&w=1400&auto=format&fit=crop') center/cover no-repeat;
+    display:flex;
+    align-items:center;
+    padding:0 8%;
+    position:relative;
+}
+ 
+.hero::before{
+    content:'';
+    position:absolute;
+    width:100%;
+    height:100%;
+    top:0;
+    left:0;
+    background:rgba(0,0,0,0.55);
+}
+ 
+.hero-content{
+    position:relative;
+    z-index:2;
+    max-width:650px;
+}
+ 
+.hero-content h1{
+    font-size:70px;
+    line-height:1.1;
+    font-family:'Cormorant Garamond',serif;
+    margin-bottom:20px;
+}
+ 
+.hero-content p{
+    font-size:18px;
+    line-height:1.8;
+    color:#ddd;
+    margin-bottom:30px;
+}
+ 
+.hero-btn{
+    display:inline-block;
+    padding:14px 35px;
+    background:#d4a762;
+    color:#111;
+    text-decoration:none;
+    border-radius:40px;
+    font-weight:600;
+    transition:0.3s;
+}
+ 
+.hero-btn:hover{
+    background:#fff;
+}
+ 
+/* ABOUT */
+ 
+.about{
+    padding:100px 8%;
+    background:#181818;
+}
+ 
+.section-title{
+    text-align:center;
+    margin-bottom:60px;
+}
+ 
+.section-title h2{
+    font-size:50px;
+    font-family:'Cormorant Garamond',serif;
+    color:#d4a762;
+    margin-bottom:10px;
+}
+ 
+.section-title p{
+    color:#ccc;
+}
+ 
+.about-container{
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(300px,1fr));
+    gap:50px;
+    align-items:center;
+}
+ 
+.about-image img{
+    width:100%;
+    border-radius:20px;
+}
+ 
+.about-content h3{
+    font-size:38px;
+    margin-bottom:20px;
+    font-family:'Cormorant Garamond',serif;
+}
+ 
+.about-content p{
+    color:#ccc;
+    line-height:1.9;
+    margin-bottom:20px;
+}
+ 
+/* TASTING SECTION */
+ 
+.tasting{
+    padding:100px 8%;
+    background:#111;
+}
+ 
+.tasting-grid{
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
+    gap:30px;
+}
+ 
+.tasting-card{
+    background:#1f1f1f;
+    border-radius:20px;
+    overflow:hidden;
+    transition:0.4s;
+}
+ 
+.tasting-card:hover{
+    transform:translateY(-10px);
+}
+ 
+.tasting-card img{
+    width:100%;
+    height:300px;
+    object-fit:cover;
+}
+ 
+.tasting-content{
+    padding:25px;
+}
+ 
+.tasting-content h3{
+    font-size:28px;
+    margin-bottom:10px;
+    font-family:'Cormorant Garamond',serif;
+    color:#d4a762;
+}
+ 
+.tasting-content p{
+    color:#ccc;
+    line-height:1.8;
+}
+ 
+/* EXPERIENCE */
+ 
+.experience{
+    padding:100px 8%;
+    background:#181818;
+}
+ 
+.exp-container{
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(300px,1fr));
+    gap:40px;
+}
+ 
+.exp-box{
+    background:#222;
+    padding:40px 30px;
+    border-radius:20px;
+    text-align:center;
+    transition:0.4s;
+}
+ 
+.exp-box:hover{
+    background:#d4a762;
+    color:#111;
+}
+ 
+.exp-box h3{
+    font-size:28px;
+    margin-bottom:15px;
+    font-family:'Cormorant Garamond',serif;
+}
+ 
+.exp-box p{
+    line-height:1.8;
+}
+ 
+/* GALLERY */
+ 
+.gallery{
+    padding:100px 8%;
+    background:#111;
+}
+ 
+.gallery-grid{
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
+    gap:20px;
+}
+ 
+.gallery-grid img{
+    width:100%;
+    height:300px;
+    object-fit:cover;
+    border-radius:20px;
+    transition:0.4s;
+}
+ 
+.gallery-grid img:hover{
+    transform:scale(1.05);
+}
+ 
+/* CONTACT */
+ 
+.contact{
+    padding:100px 8%;
+    background:#181818;
+}
+ 
+.contact-container{
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(300px,1fr));
+    gap:40px;
+}
+ 
+.contact-info h3{
+    font-size:40px;
+    margin-bottom:20px;
+    color:#d4a762;
+    font-family:'Cormorant Garamond',serif;
+}
+ 
+.contact-info p{
+    color:#ccc;
+    line-height:1.9;
+    margin-bottom:15px;
+}
+ 
+.contact-form input,
+.contact-form textarea{
+    width:100%;
+    padding:15px;
+    margin-bottom:20px;
+    border:none;
+    border-radius:10px;
+    background:#222;
+    color:#fff;
+}
+ 
+.contact-form button{
+    padding:14px 35px;
+    border:none;
+    background:#d4a762;
+    color:#111;
+    border-radius:40px;
+    font-weight:600;
+    cursor:pointer;
+}
+ 
+/* FOOTER */
+ 
+footer{
+    padding:30px;
+    text-align:center;
+    background:#000;
+    color:#999;
+}
+ 
+/* RESPONSIVE */
+ 
+@media(max-width:768px){
+ 
+.hero-content h1{
+    font-size:45px;
+}
+ 
+.nav-links{
+    display:none;
+}
+ 
+.section-title h2{
+    font-size:38px;
+}
+ 
+}
+ 
+</style>
+</head>
+ 
+<body>
+ 
+<header>
+    <div class="navbar">
+        <div class="logo">Wine bar Vinora</div>
+ 
+        <div class="nav-links">
+            <a href="index.html">Home</a>
+            <li><a href="about1.html">About</a></li>
+            <a href="#">Tasting</a>
+            <a href="#">Gallery</a>
+            <a href="#">Contact</a>
+        </div>
+    </div>
+</header>
+ 
+<!-- HERO -->
+ 
+<section class="hero">
+ 
+    <div class="hero-content">
+        <h1>Luxury Wine Bar & Tasting Room</h1>
+ 
+        <p>
+            Discover handcrafted wines, elegant interiors, and unforgettable tasting experiences.
+            Our wine lounge combines modern luxury with timeless tradition to create a warm and relaxing atmosphere.
+        </p>
+ 
+        <a href="#" class="hero-btn">Reserve a Table</a>
+    </div>
+ 
+</section>
+ 
+<!-- ABOUT -->
+ 
+<section class="about">
+ 
+    <div class="section-title">
+        <h2>About Our Wine Room</h2>
+        <p>Elegant atmosphere with premium wine collections.</p>
+    </div>
+ 
+    <div class="about-container">
+ 
+        <div class="about-image">
+            <img src="https://images.unsplash.com/photo-1504674900247-0877df9cc836?q=80&w=1200&auto=format&fit=crop">
+        </div>
+ 
+        <div class="about-content">
+            <h3>Fine Wine & Memorable Moments</h3>
+ 
+            <p>
+                Our tasting room is designed for guests who enjoy sophistication, comfort, and premium flavors.
+                Every bottle is selected carefully from renowned vineyards across the world.
+            </p>
+ 
+            <p>
+                Whether you are celebrating special occasions or enjoying a quiet evening,
+                our wine bar creates the perfect environment for unforgettable memories.
+            </p>
+ 
+            <a href="#" class="hero-btn">Explore More</a>
+        </div>
+ 
+    </div>
+ 
+</section>
+ 
+<!-- TASTING -->
+ 
+<section class="tasting">
+ 
+    <div class="section-title">
+        <h2>Wine Tasting Experience</h2>
+        <p>Discover exclusive flavors and premium collections.</p>
+    </div>
+ 
+    <div class="tasting-grid">
+ 
+        <div class="tasting-card">
+            <img src="https://images.unsplash.com/photo-1510812431401-41d2bd2722f3?q=80&w=1200&auto=format&fit=crop">
+ 
+            <div class="tasting-content">
+                <h3>Red Wine Collection</h3>
+ 
+                <p>
+                    Rich aromas, deep flavors, and handcrafted selections for wine lovers who appreciate elegance.
+                </p>
+            </div>
+        </div>
+ 
+        <div class="tasting-card">
+            <img src="https://images.unsplash.com/photo-1470337458703-46ad1756a187?q=80&w=1200&auto=format&fit=crop">
+ 
+            <div class="tasting-content">
+                <h3>Private Events</h3>
+ 
+                <p>
+                    Celebrate birthdays, romantic evenings, and corporate gatherings in our luxury tasting room.
+                </p>
+            </div>
+        </div>
+ 
+        <div class="tasting-card">
+            <img src="https://images.unsplash.com/photo-1514362545857-3bc16c4c7d1b?q=80&w=1200&auto=format&fit=crop">
+ 
+            <div class="tasting-content">
+                <h3>Premium Dining</h3>
+ 
+                <p>
+                    Pair gourmet dishes with world-class wines and enjoy a premium culinary experience.
+                </p>
+            </div>
+        </div>
+ 
+    </div>
+ 
+</section>
+ 
+<!-- EXPERIENCE -->
+ 
+<section class="experience">
+ 
+    <div class="section-title">
+        <h2>Why Choose Us</h2>
+        <p>Luxury service and unforgettable atmosphere.</p>
+    </div>
+ 
+    <div class="exp-container">
+ 
+        <div class="exp-box">
+            <h3>Exclusive Wines</h3>
+            <p>
+                Hand-selected wines from the finest vineyards across Italy, France, and California.
+            </p>
+        </div>
+ 
+        <div class="exp-box">
+            <h3>Elegant Interior</h3>
+            <p>
+                A warm and stylish ambiance designed for comfort, relaxation, and celebration.
+            </p>
+        </div>
+ 
+        <div class="exp-box">
+            <h3>Professional Service</h3>
+            <p>
+                Our expert team provides personalized recommendations for every guest.
+            </p>
+        </div>
+ 
+    </div>
+ 
+</section>
+ 
+<!-- GALLERY -->
+ 
+<section class="gallery">
+ 
+    <div class="section-title">
+        <h2>Our Gallery</h2>
+        <p>Luxury moments captured beautifully.</p>
+    </div>
+ 
+    <div class="gallery-grid">
+ 
+        <img src="https://images.unsplash.com/photo-1514933651103-005eec06c04b?q=80&w=1200&auto=format&fit=crop">
+ 
+        <img src="https://images.unsplash.com/photo-1424847651672-bf20a4b0982b?q=80&w=1200&auto=format&fit=crop">
+ 
+        <img src="https://images.unsplash.com/photo-1517248135467-4c7edcad34c4?q=80&w=1200&auto=format&fit=crop">
+ 
+ 
+    </div>
+ 
+</section>
+ 
+<!-- CONTACT -->
+ 
+
+ 
+<!-- FOOTER -->
+ 
+<footer>
+    © 2026 Wine Bar & Tasting Room. All Rights Reserved.
+</footer>
+ 
+</body>
+</html>

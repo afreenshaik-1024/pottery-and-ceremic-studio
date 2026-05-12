@@ -578,13 +578,12 @@ body{
   gap: 60px;
 }
 
-/* LEFT SIDE */
+
 
 .left-content{
   flex: 1;
 }
 
-/* PROFILE IMAGES */
 
 .profile-images{
   display: flex;

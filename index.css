@@ -36,7 +36,6 @@ body{
     display: flex;
     align-items: center;
     gap: 30px;
-
     list-style: none;
 }
 
@@ -60,28 +59,19 @@ body{
 
 .dropdown-menu{
     position: absolute;
-
-    top: 35px;
+    top: 20px;
     left: 0;
-
     width: 190px;
-
     background: white;
-
     border-radius: 10px;
-
     overflow: hidden;
-
     display: none;
-
     box-shadow: 0 10px 20px rgba(0,0,0,0.2);
 }
 
 .dropdown-menu a{
     display: block;
-
     padding: 14px 18px;
-
     color: #3e2618 !important;
 }
 
@@ -122,21 +112,118 @@ body{
     color: white;
 }
 
-.light-btn{
-    background: white;
-    color: #3e2618;
-}
+.logo-btn{
+      width:55px;
+      height:55px;
+      border:none;
+      outline:none;
+      border-radius:50%;
+      background:#d8ab84;
+      cursor:pointer;
 
-.dark-btn{
-    background: black;
-    color: white;
-}
+      display:flex;
+      align-items:center;
+      justify-content:center;
+
+      box-shadow:none;
+    }
+
+    .moon{
+      width:22px;
+      height:22px;
+      background:white;
+      border-radius:50%;
+      position:relative;
+      transform:rotate(-25deg);
+    }
+
+    .moon::before{
+      content:"";
+      position:absolute;
+      width:20px;
+      height:20px;
+      background:#d8ab84;
+      border-radius:50%;
+      top:-2px;
+      left:8px;
+    }
+    
+    .logo-btn:hover{
+      transform:scale(1.05);
+      transition:0.3s;
+    }
+
 
 .login-btn{
     background: #d6a676;
     color: white;
 }
+@media(max-width:768px){
 
+    .navbar{
+        height: 80px;
+        padding: 0 20px;
+    }
+
+    .logo img{
+        width: 120px;
+    }
+
+    .menu-toggle{
+        display: block;
+    }
+
+    .nav-links{
+        position: absolute;
+
+        top: 80px;
+        left: 0;
+
+        width: 100%;
+
+        background: #3e2618;
+
+        flex-direction: column;
+        align-items: flex-start;
+
+        padding: 25px;
+
+        gap: 22px;
+
+        display: none;
+    }
+
+    .nav-links.active{
+        display: flex;
+    }
+
+    .nav-links li{
+        width: 100%;
+    }
+
+    .nav-links li a{
+        font-size: 18px;
+    }
+
+    .dropdown-menu{
+        position: static;
+        width: 100%;
+
+        margin-top: 12px;
+
+        border-radius: 8px;
+    }
+
+    .nav-buttons{
+        display: none;
+    }
+
+    .logo-btn{
+        width: 48px;
+        height: 48px;
+    }
+
+}
 
 .hero{
     width: 100%;

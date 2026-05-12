@@ -306,59 +306,6 @@ body{
     }
 }
 
-@media(max-width:364px){
-
-    .logo img{
-        width: 120px;
-    }
-
-    .nav-links{
-        flex-direction: column;
-        gap: 15px;
-    }
-
-    .nav-links li a{
-        font-size: 15px;
-    }
-
-    .nav-buttons{
-        flex-direction: column;
-        width: 100%;
-    }
-
-    .btn{
-        width: 100%;
-    }
-
-    .hero{
-        padding: 120px 20px;
-        height: auto;
-    }
-
-    .small-text{
-        font-size: 14px;
-    }
-
-    .hero-content h1{
-        font-size: 34px;
-        line-height: 48px;
-    }
-
-    .hero-content p{
-        font-size: 14px;
-        line-height: 24px;
-    }
-
-    .hero-buttons{
-        flex-direction: column;
-        width: 100%;
-    }
-
-    .hero-btn{
-        width: 100%;
-    }
-}
-
 
 .about{
     width: 100%;
@@ -453,32 +400,6 @@ body{
     .about-content h2{
         font-size: 38px;
         line-height: 52px;
-    }
-
-}
-
-@media(max-width:364px){
-
-    .about{
-        padding: 60px 20px;
-    }
-
-    .about-content span{
-        font-size: 14px;
-    }
-
-    .about-content h2{
-        font-size: 30px;
-        line-height: 42px;
-    }
-
-    .about-content p{
-        font-size: 14px;
-        line-height: 24px;
-    }
-
-    .about-btn{
-        width: 100%;
     }
 
 }
@@ -581,38 +502,6 @@ body{
     }
 
 }
-
-
-@media(max-width:364px){
-
-    .services{
-        padding: 60px 20px;
-    }
-
-    .services-title span{
-        font-size: 14px;
-    }
-
-    .services-title h2{
-        font-size: 30px;
-        line-height: 42px;
-    }
-
-    .service-card{
-        padding: 30px 20px;
-    }
-
-    .service-card h3{
-        font-size: 24px;
-    }
-
-    .service-card p{
-        font-size: 14px;
-        line-height: 24px;
-    }
-
-}
-
 
 .products{
     width: 100%;
@@ -742,40 +631,6 @@ body{
 
     .products-container{
         grid-template-columns: 1fr;
-    }
-
-}
-
-@media(max-width:364px){
-
-    .products{
-        padding: 60px 20px;
-    }
-
-    .products-title span{
-        font-size: 14px;
-    }
-
-    .products-title h2{
-        font-size: 30px;
-        line-height: 42px;
-    }
-
-    .product-card img{
-        height: 250px;
-    }
-
-    .product-content h3{
-        font-size: 24px;
-    }
-
-    .product-content p{
-        font-size: 14px;
-        line-height: 24px;
-    }
-
-    .product-content button{
-        width: 100%;
     }
 
 }
@@ -983,6 +838,31 @@ body{
     background: #5c4033;
 }
 
+@media(max-width:768px){
+
+    .pottery-journey{
+        padding: 70px 20px;
+    }
+
+    .journey-box h2{
+        font-size: 34px;
+        line-height: 1.2;
+        margin-bottom: 18px;
+    }
+
+    .journey-box p{
+        font-size: 15px;
+        line-height: 1.8;
+        margin-bottom: 28px;
+    }
+
+    .explore-btn{
+        padding: 13px 28px;
+        font-size: 15px;
+    }
+
+}
+
 .studio-footer{
     width: 100%;
     background: #3d2b1f;
@@ -1078,21 +958,65 @@ body{
 
 @media(max-width:768px){
 
-    .footer-container{
-        grid-template-columns: repeat(2,1fr);
+    .studio-footer,
+    .craft-footer{
+        padding-top: 50px;
     }
 
-}
-
-@media(max-width:364px){
-
     .footer-container{
+        width: 90%;
         grid-template-columns: 1fr;
+        gap: 45px;
+        text-align: center;
+        padding-bottom: 40px;
+    }
+
+    .footer-logo{
+        justify-content: center;
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    .footer-logo img{
+        width: 80px;
+    }
+
+    .footer-logo h2{
+        font-size: 26px;
+    }
+
+    .footer-box h3{
+        font-size: 22px;
+        margin-bottom: 18px;
+    }
+
+    .footer-box p{
+        font-size: 15px;
+        line-height: 1.9;
+    }
+
+    .footer-box ul li{
+        margin-bottom: 12px;
+    }
+
+    .footer-box ul li a{
+        font-size: 15px;
     }
 
     .footer-last{
         flex-direction: column;
         text-align: center;
+        padding: 18px 20px;
+    }
+
+    .footer-policy-links{
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 15px;
+    }
+
+    .footer-policy-links a{
+        font-size: 14px;
     }
 
 }

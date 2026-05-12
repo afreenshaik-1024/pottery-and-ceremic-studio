@@ -583,19 +583,47 @@ body{
   font-size:16px;
   line-height:1.9;
 }
-
 @media(max-width:768px){
+
+  .choose-us{
+    padding:80px 20px;
+  }
+
+  .section-header{
+    margin-bottom:50px;
+  }
 
   .section-header h2{
     font-size:38px;
+    line-height:1.2;
   }
 
   .section-header p{
-    font-size:16px;
+    font-size:15px;
+    line-height:1.8;
+  }
+
+  .choose-grid{
+    grid-template-columns:1fr;
+    gap:22px;
+  }
+
+  .choose-card{
+    padding:35px 25px;
+    border-radius:20px;
+  }
+
+  .choose-card h3{
+    font-size:22px;
+    margin-bottom:14px;
+  }
+
+  .choose-card p{
+    font-size:15px;
+    line-height:1.8;
   }
 
 }
-
 .studio-footer{
     width: 100%;
     background: #3d2b1f;
@@ -691,21 +719,65 @@ body{
 
 @media(max-width:768px){
 
-    .footer-container{
-        grid-template-columns: repeat(2,1fr);
+    .studio-footer,
+    .craft-footer{
+        padding-top: 50px;
     }
 
-}
-
-@media(max-width:364px){
-
     .footer-container{
+        width: 90%;
         grid-template-columns: 1fr;
+        gap: 45px;
+        text-align: center;
+        padding-bottom: 40px;
+    }
+
+    .footer-logo{
+        justify-content: center;
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    .footer-logo img{
+        width: 80px;
+    }
+
+    .footer-logo h2{
+        font-size: 26px;
+    }
+
+    .footer-box h3{
+        font-size: 22px;
+        margin-bottom: 18px;
+    }
+
+    .footer-box p{
+        font-size: 15px;
+        line-height: 1.9;
+    }
+
+    .footer-box ul li{
+        margin-bottom: 12px;
+    }
+
+    .footer-box ul li a{
+        font-size: 15px;
     }
 
     .footer-last{
         flex-direction: column;
         text-align: center;
+        padding: 18px 20px;
+    }
+
+    .footer-policy-links{
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 15px;
+    }
+
+    .footer-policy-links a{
+        font-size: 14px;
     }
 
 }

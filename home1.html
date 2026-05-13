@@ -11,6 +11,7 @@
 </head>
 <body>
 
+ 
   <nav class="navbar">
 
     <div class="logo">
@@ -41,17 +42,24 @@
 
     <div class="nav-buttons">
 
-      <button class="btn rtl-btn">RTL</button>
+      <button class="btn" onclick="enableRTL()">RTL</button>
        <button class="logo-btn" type="button">
       <div class="moon"></div>
     </button>
 
 
-      <button class="btn login-btn">Login</button>
+   <button class="btn login-btn" onclick="openLoginPage()">
+    Login
+</button>
 
     </div>
 
+     <div class="menu-btn" id="menuBtn">
+        ☰
+    </div>
+
   </nav>
+
 
   <section class="hero">
 

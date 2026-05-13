@@ -12,3 +12,12 @@ menuBtn.addEventListener("click", () => {
     }
 
 });
+
+function enableRTL(){
+    document.body.classList.toggle("rtl");
+}
+
+function openLoginPage(){
+    window.location.href = "login.html";
+}
+

@@ -11,6 +11,7 @@
 </head>
 <body>
 
+
   <nav class="navbar">
 
     <div class="logo">
@@ -41,19 +42,25 @@
 
     <div class="nav-buttons">
 
-      <button class="btn rtl-btn">RTL</button>
+      <button class="btn" onclick="enableRTL()">RTL</button>
        <button class="logo-btn" type="button">
       <div class="moon"></div>
     </button>
 
 
-      <button class="btn login-btn">Login</button>
+   <button class="btn login-btn" onclick="openLoginPage()">
+    Login
+</button>
 
+    </div>
+
+     <div class="menu-btn" id="menuBtn">
+        ☰
     </div>
 
   </nav>
 
-  <!-- ===== BLOG HERO SECTION ===== -->
+
 
 <section class="blog-hero">
 
@@ -370,6 +377,174 @@
             </div>
 
         </div>
+
+    </div>
+
+</section>
+
+<!-- ===== BLOG CARDS SECTION ===== -->
+
+<section class="ceramic-blog-section">
+
+    <div class="blog-wrapper">
+
+        <!-- CARD 1 -->
+
+        <div class="ceramic-card">
+
+            <div class="card-image">
+                <img src="images/blog1.jpg" alt="Pottery Art">
+            </div>
+
+            <div class="card-content">
+
+                <span class="blog-category">
+                    POTTERY BASICS
+                </span>
+
+                <h3>
+                    Mastering Wheel Throwing
+                    for Beginners
+                </h3>
+
+                <p>
+                    Learn the fundamentals of wheel throwing,
+                    clay centering, and shaping techniques.
+                </p>
+
+                <div class="card-bottom">
+
+                    <span>
+                        April 12, 2025
+                    </span>
+
+                    <a href="#">
+                        Read More
+                    </a>
+
+                </div>
+
+            </div>
+
+        </div>
+
+        <!-- CARD 2 -->
+
+        <div class="ceramic-card">
+
+            <div class="card-image">
+                <img src="images/blog2.jpg" alt="Ceramic Studio">
+            </div>
+
+            <div class="card-content">
+
+                <span class="blog-category">
+                    CERAMIC ART
+                </span>
+
+                <h3>
+                    Creative Glazing Ideas
+                    for Ceramic Pottery
+                </h3>
+
+                <p>
+                    Explore artistic glazing styles, color layering,
+                    and modern ceramic finishes.
+                </p>
+
+                <div class="card-bottom">
+
+                    <span>
+                        April 08, 2025
+                    </span>
+
+                    <a href="#">
+                        Read More
+                    </a>
+
+                </div>
+
+            </div>
+
+        </div>
+
+        <!-- CARD 3 -->
+
+        <div class="ceramic-card">
+
+            <div class="card-image">
+                <img src="images/gallery4.jpg" alt="Clay Studio">
+            </div>
+
+            <div class="card-content">
+
+                <span class="blog-category">
+                    STUDIO LIFE
+                </span>
+
+                <h3>
+                    Inside a Modern Pottery
+                    & Ceramic Studio
+                </h3>
+
+                <p>
+                    Discover inspiring pottery workspaces,
+                    tools, and artisan studio setups.
+                </p>
+
+                <div class="card-bottom">
+
+                    <span>
+                        March 28, 2025
+                    </span>
+
+                    <a href="#">
+                        Read More
+                    </a>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+
+<!-- ===== NEWSLETTER SECTION ===== -->
+
+<section class="newsletter-section">
+
+    <!-- LEFT CONTENT -->
+
+    <div class="newsletter-content">
+
+        <span class="newsletter-tag">
+            STAY INSPIRED
+        </span>
+
+        <h2>
+            Never Miss a Pottery
+            & Ceramic Update
+        </h2>
+
+        <p>
+            Join our creative pottery community and receive
+            weekly ceramic tips, glazing ideas, and studio inspiration.
+        </p>
+
+    </div>
+
+    <!-- RIGHT FORM -->
+
+    <div class="newsletter-form">
+
+        <input type="email" placeholder="Enter your email...">
+
+        <button>
+            Get Studio Tips →
+        </button>
 
     </div>
 

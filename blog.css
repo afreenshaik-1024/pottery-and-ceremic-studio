@@ -1,3 +1,4 @@
+
 *{
     margin: 0;
     padding: 0;
@@ -21,6 +22,7 @@ body{
     top: 0;
     left: 0;
     z-index: 1000;
+    gap:15px;
 }
 
 .logo img{
@@ -395,8 +397,6 @@ body.rtl .top-buttons{
 
 }
 
-/* ===== BACKGROUND EFFECT ===== */
-
 .blog-hero::before{
     content: "";
     position: absolute;
@@ -410,7 +410,6 @@ body.rtl .top-buttons{
     transform: translate(-50%,-50%);
 }
 
-/* ===== CONTENT ===== */
 
 .blog-hero  
 {
@@ -422,12 +421,13 @@ body.rtl .top-buttons{
 
 .breadcrumb{
     margin-bottom: 35px;
+    margin-top: 60px;
 }
 
 .breadcrumb a{
     text-decoration: none;
-    color: #7b6859;
-    font-size: 18px;
+    color: #090908;
+    font-size: 30px;
 }
 
 .breadcrumb span{
@@ -458,6 +458,7 @@ body.rtl .top-buttons{
     color: #3d2b1f;
     margin-bottom: 35px;
     font-weight: 700;
+    margin-top: 60px;
 }
 
 /* ===== DESCRIPTION ===== */

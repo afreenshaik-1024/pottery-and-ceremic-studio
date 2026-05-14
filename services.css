@@ -21,6 +21,7 @@ body{
     top: 0;
     left: 0;
     z-index: 1000;
+    gap:15px;
 }
 
 .logo img{
@@ -419,6 +420,7 @@ body.rtl .top-buttons{
   text-align:center;
   position:relative;
   z-index:2;
+  margin-top: 70px;
 }
 
 .mini-title{

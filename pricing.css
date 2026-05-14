@@ -21,6 +21,7 @@ body{
     top: 0;
     left: 0;
     z-index: 1000;
+    gap:15px;
 }
 
 .logo img{
@@ -1112,4 +1113,34 @@ tbody tr:hover{
         flex-direction: column;
     }
 
+}
+
+.navbar .login-btn{
+    background:#d8ab7c ;
+    color:#fff ;
+ 
+    border:none ;
+    outline:none ;
+ 
+    padding:12px 24px ;
+ 
+    border-radius:12px ;
+ 
+    font-size:14px ;
+    font-weight:600 ;
+ 
+    line-height:1 ;
+ 
+    height:auto ;
+    width:auto ;
+ 
+    display:flex ;
+    align-items:center ;
+    justify-content:center ;
+ 
+    box-shadow:none ;
+}
+ 
+.navbar .login-btn:hover{
+    background:#c89463 ;
 }

@@ -21,6 +21,7 @@ body{
     top: 0;
     left: 0;
     z-index: 1000;
+    gap:15px;
 }
 
 .logo img{
@@ -266,6 +267,7 @@ body.rtl .top-buttons{
   z-index:2;
   max-width:850px;
   color:white;
+  margin-top: 99px;
 }
 
 
@@ -278,10 +280,11 @@ body.rtl .top-buttons{
 }
 
 .hero-content h1{
-  font-size:85px;
+  font-size:50px;
   line-height:1.05;
   font-weight:700;
-  margin-bottom:30px;
+  margin-bottom:5px;
+  margin-top: 3px;
 }
 
 .description{

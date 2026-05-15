@@ -57,7 +57,7 @@ body{
 .dropdown-menu a{
     display: block;
     padding: 14px 18px;
-    color: #3e2618 !important;
+    color: #3e2618;
 }
 .dropdown-menu a:hover{
     background: #f3e1d2;
@@ -156,7 +156,7 @@ body.rtl .top-buttons{
  
     .navbar{
         height: 90px;
-        background:#3e2618 !important;
+        background:#3e2618;
         padding:0 6%;
     }
  
@@ -176,7 +176,7 @@ body.rtl .top-buttons{
         top:90px;
         left:-100%;
         width:100%;
-        background:#3e2618 !important;
+        background:#3e2618;
         flex-direction:column;
         align-items:center;
         gap:22px;
@@ -196,7 +196,7 @@ body.rtl .top-buttons{
  
     /* RTL + DARK TOGGLE SHOW IN NAVBAR */
     .nav-buttons{
-        display:flex !important;
+        display:flex;
         position:absolute;
         right:70px;
         top:24px;
@@ -209,12 +209,12 @@ body.rtl .top-buttons{
  
     .nav-buttons .btn:first-child,
     .nav-buttons .logo-btn{
-        display:flex !important;
+        display:flex;
     }
  
     /* HIDE ORIGINAL LOGIN FROM NAVBAR */
     .nav-buttons .login-btn{
-        display:none !important;
+        display:none;
     }
  
     /* LOGIN INSIDE HAMBURGER */

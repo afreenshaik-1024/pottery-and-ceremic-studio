@@ -243,8 +243,8 @@ body.rtl .top-buttons{
         width:130px;
         height:50px;
         margin-top:10px;
-        background:#d8ab7c;
-        color:#fff;
+        background:hsl(31, 54%, 67%);
+        color:#f9f7f7;
         border-radius:12px;
         font-weight:600;
         text-decoration:none;

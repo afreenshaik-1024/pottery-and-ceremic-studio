@@ -65,3 +65,12 @@ if(localStorage.getItem("direction") === "rtl"){
     rtlBtn.innerHTML = "LTR";
   }
 }
+
+function openMenu(){
+
+    document
+    .getElementById("mobileMenu")
+    .classList.toggle("show");
+
+}
+
